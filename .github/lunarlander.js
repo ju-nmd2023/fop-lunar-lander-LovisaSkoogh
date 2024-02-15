@@ -2,6 +2,28 @@
 fill(30, 0, 60);
 rect(0, 0, 600, 500);
 
+// star
+// The following 12 lines of code was adpated from https://pixelkind.github.io/foundationsofprogramming/programming/15-07-example Accessed: 2024-02-15
+let starX = [];
+let starY = [];
+
+for (let i = 0; i < 100; i++) {
+  const x = Math.floor(Math.random() * width);
+  const y = Math.floor(Math.random() * height);
+
+  starX.push(x);
+  starY.push(y);
+}
+
+function draw() {
+  noStroke();
+
+  for (let index in starX) {
+    fill(255, 255, 255, 10);
+    ellipse(starX[index], starY[index], 1.5);
+  }
+}
+
 // orange planet
 push();
 translate(130, 150);
