@@ -33,13 +33,31 @@ pop();
 
 // blue planet
 push();
-translate(500, 240);
+translate(480, 240);
 fill(130, 211, 246);
 ellipse(0, 0, 150, 150);
 noFill();
 strokeWeight(1);
-stroke(0, 0, 0);
+stroke(41, 131, 192);
 ellipse(0, 0, 200, 60);
+strokeWeight(1);
+stroke(222, 242, 255);
+ellipse(0, -3, 200, 60);
+strokeWeight(1);
+stroke(77, 212, 185);
+ellipse(0, 0, 205, 60);
+strokeWeight(1);
+stroke(136, 178, 169);
+ellipse(0, 0, 223, 60);
+ellipse(0, 0, 200, 60);
+strokeWeight(1);
+stroke(37, 85, 112);
+ellipse(0, 0, 180, 50);
+ellipse(0, +4, 220, 60);
+ellipse(0, +2, 200, 60);
+fill(130, 211, 246);
+noStroke();
+arc(0, 0, 149, 150, PI, TWO_PI);
 pop();
 
 // moon
