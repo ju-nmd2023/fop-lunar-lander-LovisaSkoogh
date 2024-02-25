@@ -1,3 +1,8 @@
+function setup() {
+  createCanvas(600, 600);
+  frameRate(30);
+}
+
 let y = 50;
 let velocityY = 0;
 let speed = 0;
